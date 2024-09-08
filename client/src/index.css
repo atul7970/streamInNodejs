@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #242424; /* Matches your body background color */
+  overflow: hidden; /* Prevents overflow */
+}
+
+/* Styling for the video player */
+.video-player {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Optional: Border for better visibility */
+  border-radius: 8px; /* Optional: Rounded corners */
+  object-fit: contain; /* Maintains aspect ratio */
+}
